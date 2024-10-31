@@ -1,0 +1,53 @@
+/* Центрирование контейнера */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Рамка для калькулятора */
+  .calculator {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .calculator-frame {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  

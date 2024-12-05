@@ -1,37 +1,44 @@
+.sea-battle {
+  text-align: center;
+}
+
+.grids {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Добавлен отступ между полями */
+}
+
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
 .cell {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #333;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .row {
-    display: flex;
-  }
-  
-  .board {
-    display: inline-block;
-    margin: 20px;
-    border-spacing: 5px;
-  }
-  
-  .player-ship {
-    background-color: blue;
-  }
-  
-  .computer-ship {
-    background-color: orange;
-  }
-  
-  .hit {
-    background-color: red;
-  }
-  
-  .miss {
-    background-color: lightgray;
-  }
-  
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.cell.ship {
+  background-color: blue;
+}
+
+.cell.computer-ship {
+  background-color: red;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

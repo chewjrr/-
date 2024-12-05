@@ -1,0 +1,33 @@
+.game-container {
+    text-align: center;
+}
+
+.boards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boards-container div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: blue;
+}
